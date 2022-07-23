@@ -9,6 +9,10 @@ public class Request {
         this.body = body;
     }
 
+    public static Request unknown() {
+        return new Request(RequestType.UNKNOWN, null);
+    }
+
     public RequestType getType() {
         return type;
     }
